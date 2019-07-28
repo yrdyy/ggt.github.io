@@ -7,13 +7,17 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="#git是什么：             一个开源的分布式版本控制系统，可以处理项目版本管理，是管理Linux内核的开源代码的版本控制软件 #svn是什么：            是一个开放源代码的版本控制系统。svn有2种运行方式1是独立服务器，2是借助apache运行。与git的区别是，svn不是分布式的 ##github是什么：            是一个面向开源及私有软件项目的托管平台，">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/07/28/first diary/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#git是什么：             一个开源的分布式版本控制系统，可以处理项目版本管理，是管理Linux内核的开源代码的版本控制软件 #svn是什么：            是一个开放源代码的版本控制系统。svn有2种运行方式1是独立服务器，2是借助apache运行。与git的区别是，svn不是分布式的 ##github是什么：            是一个面向开源及私有软件项目的托管平台，">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-20T12:57:00.387Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#git是什么：             一个开源的分布式版本控制系统，可以处理项目版本管理，是管理Linux内核的开源代码的版本控制软件 #svn是什么：            是一个开放源代码的版本控制系统。svn有2种运行方式1是独立服务器，2是借助apache运行。与git的区别是，svn不是分布式的 ##github是什么：            是一个面向开源及私有软件项目的托管平台，">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-first diary" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-first diary" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/07/28/first diary/" class="article-date">
   <time datetime="2019-07-28T07:43:14.001Z" itemprop="datePublished">2019-07-28</time>
@@ -102,102 +104,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-new diary" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/26/new diary/" class="article-date">
-  <time datetime="2019-07-26T15:22:20.903Z" itemprop="datePublished">2019-07-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###git是一种版本分发控制器，是一个管理代码用的软件。什么是版本控制系统？版本控制系统是一个实现不在原文件上直接修改而是在复制一份并在副本中进行修改的过程中进行控制功能的一个应用程序。</p>
-<p>###而我们进行控制的文件都要提交的一个仓库（一个隐藏的文件夹），而这个仓库可以分为本地仓库（建在本地文件夹）和远程仓库（建在互联网sever内的文件夹）。</p>
-<p>###版本控制系统分为2种：<br>    一种是分布式版本控制系统（例如：git），他配有上述的两种仓库，提交文件时，我们会先提交到本地仓库，然后在联网条件下再提交到远程仓库。（Git按元数据方式将内容存储起来。）<br>    另一种是集中式版本控制系统（典型的有svn),他只配有远程仓库，但是如果本地电脑充当远程服务器的话，远程仓库就在本地电脑上，而我们提交文件时也是直接提交到远程仓库上。（svn按文件存储内容）</p>
-<p>###而Github和码云（Gitee)就是充当了一个远程仓库的身份，成为一个存放在外网server上的文件夹。</p>
-<p>###Gitlab则是用于仓库管理系统的开源项目软件，以git作管理代码的工具的基础上搭建web服务。</p>
-<p>##git的运作原理：<br>    从工作区（working directory）[本地文件夹和文件]添加（git add）到缓存空间（staging area）[属于版本库虚拟部分，由于提交修改的文件不一定全部都提交到库中，所以就分这一部分空间用作缓存]提交（git commit）版本库（repository）[储存版本的地方]</p>
-<p>##git commit命令：<br>    git commit -m “message”是比较常见的用法，-m 参数表示可以直接输入后面的“message”，如果不加 -m参数，那么是不能直接输入message的，而是会调用一个编辑器一般是vim来让你输入这个message。</p>
-<pre><code>git commit -a -m “massage”加的-a参数可以将所有已跟踪文件中的执行修改或删除操作的文件都提交到本地仓库，即使它们没有经过git add添加到暂存区，但是新加的文件（即没有被git系统管理的文件）是不能被提交到本地仓库的。建议一般不要使用-a参数，正常的提交还是使用git add先将要改动的文件添加到暂存区，再用git commit 提交到本地版本库。
+  
+    <a href="/2019/07/26/new diary/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-git commit --amend也叫追加提交，它可以在不增加一个新的commit-id的情况下将新修改的代码追加到前一次的commit-id中。
-
-git commit --help 查看帮助，可以查看其他参数的效果。</code></pre><p>##利用git，node，GitHub，hexo搭建一个博客：<br>    首先，下载node.js和git资源的安装包并安装。<br>    然后打开cmd命令行：<br>    先通过node -v，git –version和npm -v查看node,npm和git是否安装成功以及版本代号<br>    然后就是在本地安装hexo:<br>    通过代码mkdir hexoBlog创建hexoBlog的文件夹，然后cd hexoBlog移动到hexoBlog文件夹中。接着npm install hexo -g开始安装hexo,安装完毕后通过hexo -v查看，接着通过hexo init将hexo初始化，接着npm install安装所需组件。然后hexo generate生成静态文件，接着hexo server 启动服务，如果你想要改端口号的话可通过hexo server -p +4位数端口号。然后我们就可以在本地浏览器访问hexo了。<br>    接下来就将本地的hexo提交到github上，到github注册账号并创建库（ps:库名和用户名一样即可）注册成功后我们就可以打开gitbash窗口通过$git config –global user.name “你的用户名” 和$git config –global user.email”你注册的邮箱地址”来让GitHub知道谁上传东西。然后在gitbash窗口中通过$ls -al ~/.ssh（检查电脑是否有ssh），$ssh-keygen -t rsa -C”你注册的邮箱地址”（生成.ssh目录和里面的id_rsa私钥，id_rsa.pub公钥)以及$clip &lt; ~/.ssh/id_rsa.pub(复制公钥）。<br>    然后到GitHub的设置中给账户添加新的sshkey用以配置连接git。<br>    然后在gitbash窗口中通过$ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>来测试是否配置成功。<br>    接下来到hexoBlog文件夹中的_config.yml中修改deploy值：<br>      deploy:<br>      tyep:git<br>      responsitory:你创建的库的ssh路径。<br>      branch：master<br>    然后通过在cmd窗口代码npm install hexo-deployer-git -ave把文件交给GitHub。在此之前，可以先通过npm audit fix然后输入npm audit fix –force,再输入npm audit，然后再输入npm install lodash和eslint@^4.12.0等，安装这些扩展和依赖来让hexo deploy命令能够正常运行。<br>    接着通过hexo generate（hexo g简写命令也是可以的)生成静态文件，然后再输入hexo deploy，博客便搭建完毕。</p>
-<p>###git上传github库过程（gitbash窗口）：<br>    $ mkdir xxxx 创建个文件夹<br>    $ cd   xxxx  进入这个文件夹<br>    在文件夹中查看工作区状态：<br>    $ echo     “xxxxx” &gt;&gt; xxxx.txt<br>    $ git status   查看状态<br>    添加到缓存区并查看状态：<br>    $ git add<br>    $ git status<br>    提交到库中并查看状态：<br>    $ git commit -m “xxxx”<br>    $ git status<br>    其实可以将add和commit命令合并，但前提是文件早存在于库中，否则会报错：<br>    $ git commmit -am “xxxxxxx”</p>
-<p>###修改了的文件或者删除的文件并且是手动删除的工作区文件想撤销：<br>    $ git status<br>    $ git checkout –   撤销</p>
-<p>###修改了或者删除并且手动删除的工作区文件并且提交到缓存区想撤销：<br>    $ git status<br>    $ git resset HEAD 取库的文件替换掉缓存区的文件<br>    $ git checkout –</p>
-<p>###git的命令：<br>    $ git push origin master 推到远程仓库 origin代表远程仓库地址 master代表工作区或分支<br>    $ git clone +ssh仓库地址  添加的管理员即可克隆远程仓库的文件到本地分支中<br>    $ git pull origin master 拉远程仓库的文件到本地分支中<br>    $ git log 查看项目日志<br>    $ git log <file> 查看项目文件的日志<br>    $ git log . 查看本目录的日志<br>    $ git log –pretty=oneline 让日志单行显示 还有second third four+line共4种版本切换<br>    $ git reset –hard HEAD  HEAD代表当前最新版本  加上^可切换到上一个版本，^数量代表往上切换多少个版本（这样切换不方便之后的切换）<br>    $ git reset –hard 加上版本号 可直接到你想要到的版本，但只有这一个版本<br>    $ git branch 查看所有分支<br>    $ git branch +分支名字  创建生成一个分支<br>    $ git checkout +分支名字 切换分支<br>    $ git merge +分支名字 合并俩个分支，将添加的分支的文件添加到当前分支上<br>    $ git branch -d +分支名字 删除分支<br>    $ git remote 查看远程仓库别名<br>    $ git remote -v 查看远程仓库地址<br>    $ git remote remove +远程仓库名字 删除远程仓库别名<br>    $ git remote add +远程仓库名字 添加远程仓库别名</file></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/26/new diary/" data-id="cjymnq0x800018ouqgcb5c7ow" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/26/hello-world/" class="article-date">
-  <time datetime="2019-07-26T00:48:14.315Z" itemprop="datePublished">2019-07-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/26/hello-world/" data-id="cjymnq0ww00008ouqqhy745q4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
